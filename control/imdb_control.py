@@ -3,7 +3,10 @@ from control import imdb
 
 @imdb.route('/')
 def home():
- return render_template('imdb_pag/index.html')
+ return render_template('index.html')
+@imdb.route('/about')
+def about():
+ return render_template('about.html')
 
 
 
